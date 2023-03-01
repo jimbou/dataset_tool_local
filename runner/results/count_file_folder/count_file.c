@@ -67,7 +67,7 @@ void rapl_D() {
     ssize_t read;
     unsigned long long int data;
 
-    FILE *fd = fopen("/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:0/energy_uj", "r");
+    FILE *fd = fopen("/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:/energy_uj", "r");
     FILE *fd1 = fopen("rapl_beg_end.txt", "a");
 
     if (fd == NULL)
@@ -107,7 +107,7 @@ int main() {
     fp = fopen("trace_clean.txt", "a");
 
     /*writing A to Z characters into file*/
-    for (int i=0;i<3;i++){
+    for (int i=0;i<70;i++){
 
     
     for (i = 'A'; i <= 'Z'; i++)
@@ -134,7 +134,7 @@ void rapl_A() {
     ssize_t read;
     unsigned long long int data;
 
-    FILE *fd = fopen("/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:0/energy_uj", "r");
+    FILE *fd = fopen("/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:/energy_uj", "r");
     FILE *fd1 = fopen("rapl_rest.txt", "a");
 
     if (fd == NULL)
@@ -171,7 +171,7 @@ void rapl_B() {
     ssize_t read;
     unsigned long long int data;
 
-    FILE *fd = fopen("/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:0/energy_uj", "r");
+    FILE *fd = fopen("/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:/energy_uj", "r");
     FILE *fd1 = fopen("rapl_rest.txt", "a");
 
     if (fd == NULL)
@@ -207,7 +207,7 @@ void rapl_C() {
     ssize_t read;
     unsigned long long int data;
 
-    FILE *fd = fopen("/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:0/energy_uj", "r");
+    FILE *fd = fopen("/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:/energy_uj", "r");
     FILE *fd1 = fopen("rapl_rest.txt", "a");
 
     if (fd == NULL)

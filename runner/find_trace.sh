@@ -31,5 +31,5 @@ touch trace.txt
 ./general_rapl >> rapl_original.txt #store starting rapl value of the pass exe
 perf record -e intel_pt//u ./$1_folder/$1
 ./general_rapl >> rapl_last.txt #store finishing rapl value of the pass exe
-perf script --insn-trace --xed > trace.txt
+perf script --insn-trace --xed > trace.txt #-f might be needed
 

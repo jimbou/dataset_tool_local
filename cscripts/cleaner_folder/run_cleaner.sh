@@ -1,5 +1,5 @@
 #!/bin/bash
-clang -o cleaner cleaner.c
+gcc -o cleaner cleaner.c
 rm trace_clean.txt 2> /dev/null
 rm log_cleaner.txt 2> /dev/null
 rm missing_opcodes.txt  2> /dev/null

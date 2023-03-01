@@ -1,5 +1,5 @@
 #!/bin/bash
-clang -o breaker breaker.c
+gcc -o breaker breaker.c
 rm breaker_code.txt 2> /dev/null
 rm breaker_energy.txt 2> /dev/null
 rm breaker_clean_energy.txt 2> /dev/null

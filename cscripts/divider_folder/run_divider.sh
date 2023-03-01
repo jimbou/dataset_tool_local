@@ -1,5 +1,5 @@
 #!/bin/bash
-clang -o divider divider.c
+gcc -o divider divider.c
 rm divider_code.txt 2> /dev/null
 rm divider_energy.txt 2> /dev/null
 rm divider_log.txt 2> /dev/null
