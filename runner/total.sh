@@ -3,7 +3,8 @@
 
 #should have created pass first
 
-./run_pass.sh $1
+#./run_pass.sh $1
+cp -r results/$1_folder .
 rm average_value.txt 2> /dev/null
 touch average_value.txt
 ./find_multiple_trace.sh $1
